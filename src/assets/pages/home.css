@@ -19,27 +19,18 @@
 .item:hover {
   transform: scale(1.1);
   box-shadow: 0px 3px 9px 3px gray;
-
-}
-
-
-.car-logo {
-  width: 90px;
-  height: 90px;
 }
 
 .categorys {
   max-width: 100%;
   width: 100%;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-gap: 30px;
-margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
 }
-
-
 
 .car-name {
   margin-top: 5px;
@@ -69,6 +60,7 @@ margin-top: 30px;
   box-shadow: 1px 2px 7px 3px rgba(36, 36, 236, 0.639);
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
 .info-car-list {
@@ -84,14 +76,9 @@ margin-top: 30px;
   font-size: 25px;
 }
 
-.narx {
-  margin-left: 20px;
-  font-family: sans-serif;
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.yili {
+.narx,
+.yili,
+.holat {
   margin-left: 20px;
   font-family: sans-serif;
   font-size: 18px;
@@ -103,10 +90,6 @@ margin-top: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-left: 20px;
-  font-family: sans-serif;
-  font-size: 18px;
-  margin-top: 10px;
 }
 
 .save {
@@ -118,9 +101,54 @@ margin-top: 30px;
   border-radius: 15px;
   transition: all 1.5s;
 }
+
 .btn-more {
   position: absolute;
-  margin-top: 175px;
-  margin-left: 230px;
+  bottom: 10px;
+  right: 10px;
 }
 
+.car-logo {
+  width: 60px;
+  height: 40px;
+  border-radius: 15px
+}
+
+@media (max-width: 768px) {
+  .cards {
+    gap: 50px;
+  }
+
+  .car-img {
+    height: auto;
+  }
+
+
+  .card {
+    width: 90%;
+  }
+
+  .categorys {
+    gap: 20px;
+  }
+
+  .item {
+    width: 120px;
+    height: 130px;
+  }
+  .car-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}

@@ -22,13 +22,8 @@ export default function Home() {
           <Link to={`/category/${categorys._id}`} className="item" key={id}>
             <img
               src={categorys.image.url}
-              alt=""
+              alt=""            
               className="car-logo"
-              width={100}
-              height={100}
-              style={{
-                borderRadius: "20px",
-              }}
             />
             <p className="car-name">{categorys.title}</p>
           </Link>
