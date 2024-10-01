@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.not-found {
+    margin: 60px auto;
+    display: flex;
+    align-items: center; gap: 70px;
+    padding: 0 100px;
+}
+
+.h1 {
+    font-size: 200px;
+  font-weight: 700;
+  color: red;
+  margin-top: 80px;
+
+}
+
+.h2 {
+    font-size: 40px;
+    margin-left: 10px;
+    color: red;
+}
+
+.btn-found {
+    width: 150px;
+    height: 45px;
+    border: 0;
+    font-size: 18px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 13px;
+    margin-left: 80px;
+    margin-top: 30px;
+}

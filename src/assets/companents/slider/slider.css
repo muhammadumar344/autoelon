@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .navbar {
+    margin-bottom: 0px;
+} */
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 92vh;
+    margin: auto;
+    overflow: hidden;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+     
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out; 
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .slide {
+    min-width: 100%; 
+    transition: all 2s ; }
+  
+  .slide img {
+    width: 100%;
+    height: 85vh;
+    }
+  
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Tugma orqa fon rangi */
+    color: white; /* Tugma matn rangi */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%; /* Dumaloq tugmalar */
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Tugmalar uchun tashqi soya */
+  }
+  
+  .left-arrow {
+    left: 10px; /* Chap tomonga joylashgan */
+  }
+  
+  .right-arrow {
+    right: 10px; /* O'ng tomonga joylashgan */
+  }
+  
+  /* Slayder indikatorlari */
+  .indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 50%; /* Dumaloq indikatorlar */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Faollashganda indikator rang o'zgarishi */
+  }
+  
+  .indicator.active {
+    background-color: gray; /* Faol indikator rangi */
+  }
+  

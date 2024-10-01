@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient( to right, rgba(0, 0, 255, 0.584), rgba(0, 0, 255, 0.863), rgba(0, 0, 255, 0.863), rgba(0, 0, 255, 0.584));
+    
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.logo-name {
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.navbar-item:nth-child(2) {
+    
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+}
+
+.pages-text {
+    text-decoration: none;
+    color: #fff;
+}

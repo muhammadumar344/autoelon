@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.footer-body {
+}
+
+.footer {
+    height: 200px;
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0.712);
+    padding-top: 70px;
+    margin-top: 50px;
+    font-size: 17px;
+}
+.Link {
+  text-decoration: none; 
+  color: #fff;
+}
+
+.pages-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       gap: 25px;
+}
+
+.footer-list {
+  text-align: center;
+  align-items: center;
+}
+
+.admin {
+    margin-top: 20px;
+}

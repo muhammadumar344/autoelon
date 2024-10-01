@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin-bottom: 10px;
+}
+.account-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.account {
+  width: 350px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  gap: 10px;
+  padding-right: 10px;
+  box-shadow: 1px 2px 5px 1px gray;
+  transition: all 1.3s;
+}
+.account-item {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  color: blue;
+  margin-top: 30px;
+  gap: 5px;
+  font-family: sans-serif;
+}
+
+.firstname-box {
+  margin-top: 5px;
+}
+
+.setting-text {
+  text-transform: capitalize;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.user-class {
+  color: gray;
+  margin-top: 8px;
+}
+
+.user-gmail {
+  margin-top: 5px;
+}
+
+
+
+.account:hover {
+ 
+    box-shadow: 1px 2px 5px 1px blue;
+
+}
+
+.user-cars {
+  width: 750px;
+  height: 400px;
+  border-radius: 15px;
+  padding: 30px;
+  padding-top: 20px;
+  transition: all 1.3s;
+  box-shadow: 1px 2px 5px 1px gray;
+
+}
+
+.posts {
+  display: flex;
+  gap: 10px;
+}
+
+.then-texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-plus {
+  text-decoration: none;
+   color: blue;
+   font-size: 28px;
+   font-weight: 700;
+}
+
+.user-cars-text {
+  color: blue;
+  font-size: 24px;
+
+}
+
+.user-cars:hover {
+ 
+  box-shadow: 1px 2px 5px 1px blue;
+
+}
+
+.btn-delete-user {
+  border: none;
+  border-radius: 15px;
+  margin-top: 90px;
+  background-color: rgba(255, 0, 0, 0.735);
+  border: none;
+  color: white;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  left: 0;
+  margin-left: 20px;
+  border-radius: 15px;
+}
