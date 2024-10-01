@@ -110,9 +110,9 @@ margin-top: 30px;
 }
 
 .save {
-  background-color: rgba(0, 0, 255, 0);
+  background-color: red;
   border: none;
-  color: rgba(255, 255, 255, 0);
+  color: #fff;
   width: 100px;
   height: 30px;
   border-radius: 15px;
