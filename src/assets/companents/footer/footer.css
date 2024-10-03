@@ -1,39 +1,57 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-
-.footer-body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .footer {
-    height: 200px;
-    color: #fff;
-    background-color: rgba(0, 0, 255, 0.712);
-    padding-top: 70px;
-    margin-top: 50px;
-    font-size: 17px;
-}
-.Link {
-  text-decoration: none; 
+  height: 200px;
+  background-color: rgba(0, 0, 255, 0.712);
   color: #fff;
+  padding-top: 70px;
+  margin-top: 50px;
+  font-size: 17px;
+}
+
+.Link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.Link:hover {
+  color: #ffcc00;
 }
 
 .pages-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-       gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
 .footer-list {
   text-align: center;
-  align-items: center;
 }
 
 .admin {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+.text-footer {
+  font-size: 14px;
+}
+
+/* Responsiv dizayn */
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .pages-text {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
