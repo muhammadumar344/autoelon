@@ -23,6 +23,14 @@
   color: #333;
 }
 
+.inps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
 .input {
   width: 100%;
   max-width: 280px;
@@ -30,6 +38,7 @@
   outline: none;
   padding: 0 10px;
   border: none;
+  
   box-shadow: -3px 3px 4px 1px rgb(103, 103, 103);
   border-radius: 25px;
   margin: 10px 0;
@@ -63,7 +72,6 @@
   color: darkblue;
 }
 
-/* Responsiv dizayn */
 @media (max-width: 768px) {
   .login {
     width: 330px;

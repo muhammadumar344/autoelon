@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
   gap: 30px;
   margin-right: 20px;
   flex-wrap: wrap; /* Responsivlik uchun */
@@ -114,17 +115,18 @@
   height: 35px;
   font-size: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition:  0.3s ease;
+  margin-left: 20px;
 }
 
 .btn-delete-user:hover {
-  background-color: darkred;
+  background-color: rgb(210, 0, 0);
 }
 
-/* Responsiv dizayn */
 @media (max-width: 768px) {
   .user-cars {
-    width: 100%;
+    width: 350px;
+
   }
 
   .account-list {
