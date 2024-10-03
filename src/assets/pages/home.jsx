@@ -1,30 +1,29 @@
+import { useEffect } from "react";
 import Navbar from "../companents/Navbar/navbar";
 import "../pages/home.css";
-import logo from "../img/audi.png";
 import { useCardContext } from "../context/cars";
 import { useCategoryContext } from "../context/category";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "../companents/footer/footer";
 import Slide from "../companents/slider/slider";
 
 export default function Home() {
-  const { card } = useCardContext();
-  const { category } = useCategoryContext();
+  const { card, loading: cardLoading, error: cardError } = useCardContext();
+  const { category, loading: categoryLoading, error: categoryError } = useCategoryContext();
 
-  const { carsId } = useParams();
- 
+  useEffect(() => {
+    if (cardError || categoryError) {
+      alert("Bizning web sahifamiz ishlamayapti");
+    }
+  }, [cardError, categoryError]);
+
   return (
     <>
       <Slide />
-
       <div className="categorys">
         {category?.map((categorys, id) => (
           <Link to={`/category/${categorys._id}`} className="item" key={id}>
-            <img
-              src={categorys.image.url}
-              alt=""            
-              className="car-logo"
-            />
+            <img src={categorys.image.url} alt="" className="car-logo" />
             <p className="car-name">{categorys.title}</p>
           </Link>
         ))}
@@ -41,9 +40,8 @@ export default function Home() {
                 <p className="holat">Holati: {car.description}</p>
               </div>
               <Link to={`/car/${car._id}`} className="btn-more">
-                <button className="save">more </button>
+                <button className="save">more</button>
               </Link>
-              
             </div>
           </div>
         ))}

@@ -142,7 +142,7 @@ fetch(`https://avtoelon-production.up.railway.app/car/${id}`, requestOptions)
                     display: "flex",
                     gap: "5px",
                     textTransform: "capitalize",
-                  }}
+                  }} 
                 >
                   <div className="title-user-acc">
                     <h4 className="firstname">{info[0]?.author?.firstname}</h4>
