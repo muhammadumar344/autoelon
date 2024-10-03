@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 
-.navbar {
-}
 .account-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 20px;
+  flex-wrap: wrap; /* Responsivlik uchun */
 }
 
 .account {
@@ -23,8 +22,9 @@
   gap: 10px;
   padding-right: 10px;
   box-shadow: 1px 2px 5px 1px gray;
-  transition: all 1.3s;
+  transition: all 0.3s ease;
 }
+
 .account-item {
   flex-direction: column;
   display: flex;
@@ -35,18 +35,18 @@
   font-family: sans-serif;
 }
 
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 .firstname-box {
   margin-top: 5px;
 }
 
 .setting-text {
   text-transform: capitalize;
-}
-
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
 }
 
 .user-class {
@@ -58,12 +58,8 @@
   margin-top: 5px;
 }
 
-
-
 .account:hover {
- 
-    box-shadow: 1px 2px 5px 1px blue;
-
+  box-shadow: 1px 2px 5px 1px blue;
 }
 
 .user-cars {
@@ -72,9 +68,12 @@
   border-radius: 15px;
   padding: 30px;
   padding-top: 20px;
-  transition: all 1.3s;
   box-shadow: 1px 2px 5px 1px gray;
+  transition: all 0.3s ease;
+}
 
+.user-cars:hover {
+  box-shadow: 1px 2px 5px 1px blue;
 }
 
 .posts {
@@ -90,21 +89,19 @@
 
 .text-plus {
   text-decoration: none;
-   color: blue;
-   font-size: 28px;
-   font-weight: 700;
+  color: blue;
+  font-size: 28px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.text-plus:hover {
+  color: darkblue;
 }
 
 .user-cars-text {
   color: blue;
   font-size: 24px;
-
-}
-
-.user-cars:hover {
- 
-  box-shadow: 1px 2px 5px 1px blue;
-
 }
 
 .btn-delete-user {
@@ -112,12 +109,26 @@
   border-radius: 15px;
   margin-top: 90px;
   background-color: rgba(255, 0, 0, 0.735);
-  border: none;
   color: white;
   width: 100px;
   height: 35px;
   font-size: 15px;
-  left: 0;
-  margin-left: 20px;
-  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete-user:hover {
+  background-color: darkred;
+}
+
+/* Responsiv dizayn */
+@media (max-width: 768px) {
+  .user-cars {
+    width: 100%;
+  }
+
+  .account-list {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
